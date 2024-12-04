@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    background-color: rgb(185, 23, 23);
+}
+
+@font-face {
+  font-family: "CarlaSansLight";
+  src: url("../fonts/CarlaSansLight.ttf") format("truetype");
+  font-style: Light;
+  font-weight: Light;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    font-family: 'CarlaSansLight';
+}
+
+.symbol {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28vw;
+    height: 28vw;
+    border-radius: 100%;
+    background-color: rgb(212, 218, 222);
+    margin:auto;
+    animation: rolll infinite 2s linear;
+}
+
+.svastika {
+    position: absolute;
+    width: 25vw;
+    height: 25vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.rec {
+    position: absolute;
+    background-color: black;
+    width: 3.5vw;
+}
+
+.big {
+    height: 17.862vw;
+    overflow:i;
+}
+
+.vert {
+    transform: rotate(50deg);
+}
+
+.gor {
+    transform: rotate(140deg);
+}
+
+.small {
+    height: 7.5vw;
+}
+
+#stick1 {
+    left: 2vw;
+    top: 9.5vw;
+    transform: rotate(140deg);
+}
+
+#stick2 {
+    top: 0vw;
+    left: 10vw;
+    transform: rotate(50deg);
+}
+
+#stick3 {
+    top: 8vw;
+    left: 19.5vw;
+    transform: rotate(140deg);
+}
+
+#stick4 {
+    top: 17.5vw;
+    left: 11.5vw;
+    transform: rotate(230deg);
+}
+
+@keyframes rolll {
+    100%{transform: rotate(360deg)};
+}
